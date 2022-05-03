@@ -1,11 +1,9 @@
 @charset "utf-8"
 @import url(normalize.css);
 
-/*視窗背景色設定*/
+/*字體顏色設定*/
 body{
-    background-color: darkgrey;
     color: rgb(41, 108, 150);
-    margin: 0px;
 }
 
 /*主標題設定*/
@@ -13,8 +11,7 @@ h1{
     width: 300px;
     margin: 40px auto;
     padding: 30px;
-    border: 5px  solid #8b9691;
-    background-color: #000000;
+    border: 5px  solid #ffffff;
     color: rgb(255, 255, 255);
     font-size: 300%;
     text-align: center;
@@ -25,9 +22,9 @@ h1{
 h2{
     padding: 10px;
     margin-bottom: 30px;
-    border: 1px dotted #94c8b1;
+    border: 1px dotted #1109aa;
     border-left: 10px solid #000000;
-    color: #6fbb9a;
+    color: #4ab084;
 }
 
 /*logo設定*/
@@ -49,7 +46,7 @@ h1{
 
 /*置中對齊*/
 h1,header,nav,footer{   
-    text-align: center;
+  text-align: center;
 }
 
 /*連結設定*/
@@ -100,7 +97,7 @@ body{
     padding: 10px;
     background: #0d0e0d54;
     border-radius: 8px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
 
