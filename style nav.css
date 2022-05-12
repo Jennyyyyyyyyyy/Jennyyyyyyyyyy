@@ -154,7 +154,7 @@ body{
   
 
   nav{
-    background-color: rgb(62, 58, 58);
+background-color:rgb(209, 202, 202);
     text-align:center;
 }
 
@@ -170,10 +170,10 @@ nav li a{
     display: block;
     text-decoration: none;
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 nav li a:hover{
     background-color:darkgray;
-    color: rgb(254, 254, 254);
+    color: rgb(2, 0, 0);
     transition: background-color 2s ease-in-out, color 2s;
 }
