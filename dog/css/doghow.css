@@ -1,0 +1,179 @@
+/*圖片伸縮設定*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+body li{
+    list-style-type: none;
+}
+/*雙向導覽列設計*/
+/* ---------- 大小與定位 ---------- */
+#menu {
+	/* 選單大小 */
+	height:30px;
+}
+
+#menu li{
+    border: 1px solid rgb(0, 0, 0);
+    width: 215px;
+}
+
+#menu ul {
+	/* 取消ul樣式符號 */
+	list-style-type:none;
+	/* 重設ul邊界與留白為零 */
+	margin:0;
+	padding:0;
+	/* 內有浮動元件時，需設overflow才會自動調整大小 */
+  overflow:auto;
+}
+
+#menu ul li {
+	/* 利用float讓第一層li水平排列 */
+	float:left;
+}
+
+#menu ul li a {
+	/* 將a改為區塊元件，以便指定寬高 */
+	display:block;
+	/* 這邊也要設float，否則IE6會以100%寬度顯示 */
+	float:right;
+	/* 固定高度 */
+	height:30px;
+	width: 100px;
+	text-align: center;
+}
+#menu ul li ul {
+	/* 讓第二層ul跳脫文件流以利定位 */
+	position:absolute;
+	/* 固定寬度 */
+	width:100px;
+	/* 避免出現捲軸 */
+	overflow:visible;
+	/* 讓ul與母階層li相同位置 */
+	clear:left;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+#menu ul li ul li {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float:none;
+	text-align: center;
+}
+#menu ul li ul li a {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float:none;
+	width: 100%;/* 註：display、height、padding繼承第一層的設定 */
+}
+#menu ul li ul li ul {
+	margin-top: -30px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 100px;
+	width: 100%;
+}
+
+/* ---------- 隱藏與顯示階層 ---------- */
+#menu ul li ul {
+	/* 預先隱藏第二層 */
+	visibility:hidden;
+}
+#menu ul li:hover ul {
+	/* 觸動第一層時，顯示第二層 */
+	visibility:visible;
+}
+#menu ul li:hover ul li ul {
+	/* 顯示第二層時，隱藏第三層，避免同時彈出 */
+	visibility:hidden;
+}
+#menu ul li ul li:hover ul {
+	/* 觸動第二層時，顯示第三層 */
+	visibility:visible;
+}
+#menu ul li ul li:hover ul li ul {
+	/* 顯示第三層時，隱藏第四層，避免同時彈出 */
+	visibility:hidden;
+}
+#menu ul li ul li ul li:hover ul {
+	/* 觸動第三層時，顯示第四層 */
+	visibility:visible;
+}
+/* ---------- 以下為美化用，非必需 ---------- */
+
+
+/* 預設字體 */
+#menu {
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/* 第一層ul背景色彩與邊框 */
+#menu ul {
+	background:#6f6f6f;
+}
+/* 第一層a字型 */
+#menu ul li a {
+	color:#FFF;
+	text-decoration:none;
+	line-height: 30px;
+}
+/*第二層ul背景色彩與邊框  */
+#menu ul li ul {
+	background:#efefef;
+}
+/* 第二層a字型 */
+#menu ul li ul li a {
+	font-size:0.8em;
+	color:#333333;
+	text-decoration:none;
+}
+/* 觸動第一層li時，改變背景色 */
+#menu ul li:hover, #menu ul li a:hover {
+	background:#efefef;
+}
+#menu ul li:hover a {
+	color:#333333;
+}
+/* 觸動第二層以上li時改變背景色 */
+#menu ul li ul li:hover, #menu ul li ul li a:hover {
+	background:#dfdfdf;
+}
+
+/*內容區塊設定*/
+main{
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 2px solid #000000;
+    background-color: #efe3d2;
+}
+/*置中對齊*/
+h1,header,nav,footer{   
+    text-align: center;
+}
+/*標題大字*/
+h1{
+    font-size: 2em;
+    padding: 10px;
+    border: 3px dotted #000000;
+    border-left: 10px solid #53534f;
+    border-right: 10px solid #53534f;
+}
+/*內文*/
+h3{
+	font-size: 1.5em;
+}
+.red{
+	color: red;
+	font-size: 1.2em;
+}
+.big{
+	font-size: 1.3em;
+}
