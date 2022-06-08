@@ -29,11 +29,17 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="06011.css" />
+    <link rel="stylesheet" href="0608.css">
+    <link rel="stylesheet" href="06082.css">
+    <link
+    rel="stylesheet"
+    href="animate.min.css"
+  />
   </head>
 
   <body>
     <nav class="navbar">
-      <div class="navbar-container container">
+      <div class="navbar-container container animate__animated animate__bounce">
         <input type="checkbox" name="" id="">
         <div class="hamburger-lines">
           <span class="line line1"></span>
@@ -42,7 +48,8 @@
         </div>
         <ul class="menu-items">
           <li><a href="#about">作品集</a></li>
-          <li><a href="#food">證照&證書</a></li>
+          <li><a href="#food">貓貓世界</a></li>
+          <li><a href="#aa">證照&證書</a></li>
           <li><a href="#testimonials">技能&社群操作</a></li>
           <li><a href="mailto:110111215@mail.aeust.edu.tw">聯絡我們</a></li>
           <li><a href="http://www.aeust.edu.tw" target="_blank">亞東科大</a></li>
@@ -85,10 +92,63 @@
             <li><a href="https://jennyyyyyyyyyy.github.io/Jennyyyyyyyyyy/dog/index.html">期末報告</a></li>
           </ul>
         </div>
-        <div class="about-img">
+        <div class="about-img animate__animated animate__bounce">
           <img src="img/cat1.jpg" alt="圖" />
         </div>
       </div>
+
+      <div class="food-container container">
+      <div class="CSSgal">
+
+        <!-- Don't wrap targets in parent -->
+        <s id="s1"></s> 
+        <s id="s2"></s>
+        <s id="s3"></s>
+        <s id="s4"></s>
+      
+        <div class="slider">
+          <div style="background-image: url(img/c.jpg);">
+            <h2>貓貓圖片輪播</h2>
+          </div>
+          <div style="background-image: url(img/c2.jpg);">
+            <h2>cat 2</h2>
+          </div>
+          <div style="background-image: url(img/c3.jpg);">
+            <h2>cat 3</h2>
+          </div>
+          <div style="background-image: url(img/c4.jpg);">
+            <h2>cat 4</h2>
+          </div>
+        </div>
+        
+        <div class="prevNext">
+          <div>
+            <a href="#s4"><</a>
+            <a href="#s2">></a>
+          </div>
+          <div>
+            <a href="#s1"><</a>
+            <a href="#s3">></a>
+          </div>
+          <div>
+            <a href="#s2"><</a>
+            <a href="#s4">></a>
+          </div>
+          <div>
+            <a href="#s3"><</a>
+            <a href="#s1">></a>
+          </div>
+        </div>
+      
+        <div class="bullets">
+          <a href="#s1">1</a>
+          <a href="#s2">2</a>
+          <a href="#s3">3</a>
+          <a href="#s4">4</a>
+        </div>
+      
+      </div>
+      
       <div class="row">
         <div class="col">
             <h2>語錄</h2>
@@ -111,7 +171,41 @@
             </div>
         </div>
     </section>
-    <section id="food">
+
+<section id="food">
+  <h2>貓貓世界</h2>
+  <div class="food-container container">
+    <div class="food-type fruite">
+      <div class="img-container">
+        <img src="img/cat.jpg" alt="圖1" />
+        <div class="img-content">
+          <h3>cat1</h3>
+          <a href="https://unsplash.com/photos/gKXKBY-C-Dk" class="btn btn-primary" target="blank">瞭解更多</a>
+        </div>
+      </div>
+    </div>
+    <div class="food-type vegetable">
+      <div class="img-container">
+        <img src="img/cat02.jpg" alt="圖2" />
+        <div class="img-content">
+          <h3>cat02</h3>
+          <a href="https://unsplash.com/photos/9UUoGaaHtNE" class="btn btn-primary" target="blank">瞭解更多</a>
+        </div>
+      </div>
+    </div>
+    <div class="food-type grin">
+      <div class="img-container">
+        <img src="img/cat03.jpg" alt="圖3" />
+        <div class="img-content">
+          <h3>cat03</h3>
+          <a href="https://unsplash.com/photos/NodtnCsLdTE" class="btn btn-primary" target="blank">瞭解更多</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="aa">
       <h2>證照&證書</h2>
       <h3>●電腦軟體應用 丙級</h3>
       <img src="img/電丙.jpg" alt="電丙" width="300" height="200" class="imgL">
@@ -119,14 +213,14 @@
       <p class="more clear"><a href="img/電丙.jpg">更多介紹</a></p>
     </section>
 
-    <section id="food">
+    <section id="aa">
       <h3>●網頁設計 網丙</h3>
       <img src="img/網丙.jpg" alt="網丙" width="300" height="200" class="imgR">
       <p>網頁設計是我從來沒碰過的，當初怕自己會學不來，考這張證照是花許多時間去準備，最終抽到題組三，是簡單的題組能讓我在考場發揮，拿到證照!</p>
       <p class="more clear"><a href="img/網丙.jpg">更多介紹</a></p>
     </section>
 
-    <section id="food">
+    <section id="aa">
       <h3>●電腦軟體應用 乙級</h3>
       <img src="img/電乙.jpg" alt="電乙" width="300" height="200" class="imgL">
       <p>這張證照是高中生涯的最難的一張證照，要花更多時間去準備，還抽到題組二第二難的題目，把自己平常練習的實力發揮在考場上，考到的那刻，我心中終於放下了一塊大石頭。</p>
@@ -134,21 +228,21 @@
     </section>
 
 
-    <section id="food">
+    <section id="aa">
       <h3>●中文看打輸入—丙級</h3>
       <img src="img/中打丙級.jpg" alt="中文看打輸入—丙級" width="300" height="200" class="imgR">
       <p>中打是我們平常應該具備的技能之一，而且也是我們平常最常使用的輸入法，多練習指法的位置，可以再更好的!</p>
       <p class="more clear"><a href="img/中打丙級.jpg">更多介紹</a></p>
     </section>
 
-    <section id="food">
+    <section id="aa">
       <h3>●英文看打輸入—初級</h3>
       <img src="img/英打初級.jpg" alt="英文看打輸入—初級" width="300" height="200" class="imgL">
       <p>平常碰電腦的時候就很少接觸到英打，需要花一點的時間去練習英打，多練習幾次還是有成果的!</p>
       <p class="more clear"><a href="img/英打初級.jpg">更多介紹</a></p>
     </section>
 
-    <section id="food">
+    <section id="aa">
       <h3>●Excel 2010 - 實用級</h3>
       <img src="img/Excel 2010 - 實用級.jpg" alt="Excel 2010 - 實用級" width="300" height="200" class="imgR">
       <p>從我不熟悉到熟悉Excel，學會了這些功能，可以讓我可以快速的輸入資料，方便了許多。</p>

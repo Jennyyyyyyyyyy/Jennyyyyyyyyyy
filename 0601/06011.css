@@ -665,6 +665,13 @@ body {
 
 
 /*手風琴列表*/
+
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
   .row {
     display: flex;
   }
@@ -734,3 +741,8 @@ body {
   input:checked ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
+
+
+
+
+    
