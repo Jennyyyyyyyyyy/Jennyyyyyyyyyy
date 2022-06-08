@@ -142,3 +142,9 @@
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
 }
+
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
